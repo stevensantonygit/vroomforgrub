@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VROOM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <nav class="flex items-center justify-between p-6 bg-gray-900">
+    <h1 class="text-3xl font-bold text-red-600">VROOM</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#gallery" class="hover:text-red-500">VROOM Gallery</a></li>
+      <li><a href="#brands" class="hover:text-red-500">VROOM Brands</a></li>
+      <li><a href="#faq" class="hover:text-red-500">VROOM FAQ</a></li>
+      <li><a href="#subscribe" class="hover:text-red-500">Subscribe to VROOM</a></li>
+    </ul>
+    <button class="md:hidden text-red-600">Menu</button>
+  </nav>
+
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://cdn.motor1.com/images/mgl/qkk7zv/s1/novitec-ferrari-sf90-stradale-2022.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center">
+        <h2 class="text-5xl font-extrabold mb-4">Experience the Thrill</h2>
+        <p class="text-xl mb-6">Discover the world's most goated supercars.</p>
+        <a href="#gallery" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded">Explore Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4 py-12 flex flex-col md:flex-row">
+
+    <aside id="brands" class="md:w-1/4 mb-8 md:mb-0 md:mr-8">
+      <h3 class="text-2xl font-semibold mb-4">Top Brands</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-red-500">Ferrari</a></li>
+        <li><a href="#" class="hover:text-red-500">Lamborghini</a></li>
+        <li><a href="#" class="hover:text-red-500">McLaren</a></li>
+        <li><a href="#" class="hover:text-red-500">Bugatti</a></li>
+      </ul>
+    </aside>
+
+    <main id="gallery" class="md:w-3/4">
+      <h3 class="text-3xl font-bold mb-6">Supercar Gallery</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded overflow-hidden shadow-lg hover:shadow-yellow-500 transition-shadow">
+          <img src="https://etimg.etb2bimg.com/photo/101380711.cms" alt="Ferrari" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Ferrari</h4>
+            <p class="text-gray-400 text-sm">A hybrid masterpiece with unmatched performance.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <section id="faq" class="bg-gray-900 py-12">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+      <div class="space-y-4 max-w-2xl mx-auto">
+        <div class="bg-gray-800 p-4 rounded">
+          <button class="w-full text-left font-semibold">Can I test drive these supercars?</button>
+          <p class="mt-2 text-gray-400">Test drives are available in our video game that is going to get published in 2028.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="subscribe" class="py-12 bg-cover bg-center relative" style="background-image: url('https://img.pikbest.com/wp/202408/supercar-3d-rendering-of-the-lamborghini-veneno_9774265.jpg!w700wp');">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h3 class="text-2xl font-bold mb-4 text-white">Stay Updated</h3>
+    <p class="mb-6 text-gray-300">Subscribe to receive the latest news and updates on supercars.</p>
+    <form class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded bg-gray-800 bg-opacity-80 text-white focus:outline-none">
+      <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+  <footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400">&copy; These are VROOM's Rights</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-red-500">Vroom Vroom Vroom Vroom Vroom!!!!!</a>
+        <a href="#" class="hover:text-red-500">Awooga</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
