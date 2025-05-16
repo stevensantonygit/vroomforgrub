@@ -6,17 +6,34 @@
   <title>VROOM</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<script>
+  const menuButton = document.querySelector('nav button');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 <body class="bg-black text-white font-sans">
 
-  <nav class="flex items-center justify-between p-6 bg-gray-900">
-    <h1 class="text-3xl font-bold text-red-600">VROOM</h1>
+  <nav class="flex flex-col md:flex-row md:items-center justify-between p-6 bg-gray-900">
+    <div class="flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-red-600">VROOM</h1>
+      <button class="md:hidden text-red-600">Menu</button>
+    </div>
     <ul class="hidden md:flex space-x-6">
       <li><a href="#gallery" class="hover:text-red-500">VROOM Gallery</a></li>
       <li><a href="#brands" class="hover:text-red-500">VROOM Brands</a></li>
       <li><a href="#faq" class="hover:text-red-500">VROOM FAQ</a></li>
       <li><a href="#subscribe" class="hover:text-red-500">Subscribe to VROOM</a></li>
     </ul>
-    <button class="md:hidden text-red-600">Menu</button>
+    <div id="mobileMenu" class="md:hidden hidden mt-4 space-y-4">
+      <a href="#gallery" class="block text-white hover:text-red-500">VROOM Gallery</a>
+      <a href="#brands" class="block text-white hover:text-red-500">VROOM Brands</a>
+      <a href="#faq" class="block text-white hover:text-red-500">VROOM FAQ</a>
+      <a href="#subscribe" class="block text-white hover:text-red-500">Subscribe to VROOM</a>
+    </div>
   </nav>
 
   <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://cdn.motor1.com/images/mgl/qkk7zv/s1/novitec-ferrari-sf90-stradale-2022.jpg');">
